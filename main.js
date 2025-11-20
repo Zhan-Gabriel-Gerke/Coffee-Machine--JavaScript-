@@ -70,8 +70,7 @@ function takeMoney(){
 
 
 while (true){
-    showAmount()
-    console.log("Write action (buy, fill, take): ")
+    console.log("Write action (buy, fill, take, remaining, exit): ")
     let answer = input()
     if (answer == "buy"){
         buyCoffee()
@@ -79,5 +78,9 @@ while (true){
         addStuff()
     }else if (answer == "take"){
         takeMoney()
+    }else if (answer == "remaining"){
+        showAmount()
+    }else if (answer == "exit"){
+        break
     }
 }
